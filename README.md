@@ -18,3 +18,15 @@
   • Message (textarea)
 
 7. Screen reader-friendly error messages (missong fields, incorrect formats)
+
+
+When submitting your assignment, add an email to the client, including:
+
+- The main features added to the form you created
+- The data validation in the form.
+- The link to your new website page deployed on GitHub Pages.
+- 
+Once you finish your tasks, make sure you upload the following on Brightspace:
+
+- All the HTML, CSS and JavaScript files used for your website
+- Email to the client (as a Word document or a comment on the submission).
