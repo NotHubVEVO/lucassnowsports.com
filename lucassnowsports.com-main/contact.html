@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <script src="contactpage/contactjs.js"></script>
+    <link
+      rel="stylesheet"
+      href="contactpage/contactstyle.css"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="index.html">Lucas Snow Sports</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AboutUs.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blindstory.html">A Cool Story</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>Contact us Here!</h1>
+
+    <div class="container">
+      <form id="myForm" action="action_page.php" onsubmit="validateForm()">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+          pattern="[A-Z a-z]{2,30}"
+          title="First name should be 2-30 letters"
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+          pattern="[A-Za-z]{2,30}"
+          title="Last name should be 2-30 letters"
+        />
+
+        <label for="email">Enter your email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="johnpork@tudublin.ie"
+          pattern=".+@tudublin\.ie"
+        />
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="">-- Select your country --</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="newzealand">New Zealand</option>
+          <option value="ireland">Ireland</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="italy">Italy</option>
+          <option value="spain">Spain</option>
+          <option value="mexico">Mexico</option>
+          <option value="brazil">Brazil</option>
+          <option value="argentina">Argentina</option>
+          <option value="china">China</option>
+          <option value="japan">Japan</option>
+          <option value="southkorea">South Korea</option>
+          <option value="india">India</option>
+          <option value="southafrica">South Africa</option>
+          <option value="sweden">Sweden</option>
+          <option value="norway">Norway</option>
+          <option value="denmark">Denmark</option>
+          <option value="finland">Finland</option>
+          <option value="switzerland">Switzerland</option>
+          <option value="netherlands">Netherlands</option>
+          <option value="portugal">Portugal</option>
+          <option value="belgium">Belgium</option>
+          <option value="austria">Austria</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+          pattern=".{10,500}"
+          title="Subject must be between 10 and 500 characters"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script src="contactpage/contactjs.js"></script>
+  </body>
+</html>
